@@ -45,18 +45,7 @@ CREATE TABLE contactos (
    telefono varchar(15) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE detalle (
-   id_detalle int(11) NOT NULL,
-   mensaje varchar(150) NOT NULL,
-   direccion varchar(100) NOT NULL,
-   coordenadas  varchar(150) NOT NULL,
-   id_usuario int(11) NOT NULL,
-   id_contacto int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-ALTER TABLE detalle
-  ADD CONSTRAINT  detalle_ibfk_1 FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario),
-  ADD CONSTRAINT detalle_ibfk_2 FOREIGN KEY (id_contacto) REFERENCES contactos (id_contacto);
 
 
 
