@@ -81,7 +81,7 @@ class Api_contactos:
             telefono=user_data.telefono
 
             # user_hash
-            if user_hash == 'eba1c13c68d351dbc1d3f3d76a18d16d':
+            if user_hash == 'eba1c13c68d351dbc1d3f3d76a18d16':
                 if action is None:
                     raise web.seeother('/404')
                 elif action == 'get':
